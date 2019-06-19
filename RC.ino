@@ -125,7 +125,7 @@ uint32_t ppmTotal = 0;
 uint32_t ppmServo[RC_CHANNELS];
 uint32_t next;
     
-void inline PPM_ISR(void)
+ICACHE_RAM_ATTR void inline PPM_ISR(void)
 {
   uint32_t ppmOut;
   if (ppmPhase == 0)
